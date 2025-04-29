@@ -1,0 +1,30 @@
+.edtbody{
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue-0);
+    height: 100vh;
+}
+.editi{
+  display: grid;
+  place-items: center;
+  
+  background-color: var(--blue-0);
+
+  font-family: var(--font-sans);
+  font-size: var(--font-size-3);
+  line-height: var(--font-lineheight-3);
+}
+.edt{
+  margin-top: 150px;
+  height: 400px;
+  /*width: min(100% - 2rem, 40rem);*/
+  width: 1000px;
+  margin-bottom: 20px;
+  background-color: var(--gray-0);
+  box-shadow: var(--shadow-2);
+  border-radius: var(--radius-2);
+
+  transition: var(--transition);
+  transition-property: box-shadow;
+  overflow: hidden;
+}

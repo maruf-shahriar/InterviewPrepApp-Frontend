@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@500;600&display=swap'); 
+:root{
+    --color-first: #5AC69F;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-back1: #212b38;
+    
+}
+.activateBody{
+    margin: 0;
+    padding: 0;
+    background-color: #454545;
+    height: 100vh;
+    display: grid;
+  place-items: center;
+  font-family: 'Poppins', Arial, Verdana;
+}
+.activate{
+    min-height: 477px;
+    /*width: min(100% - 2rem, 40rem);*/
+    width: 700px;
+   margin-bottom: 20px;
+   background-color: var(--color-black);
+   box-shadow: var(--shadow-2);
+   border-radius: var(--radius-2);
+
+  transition: var(--transition);
+  transition-property: box-shadow;
+  overflow: hidden;
+}
+.activate:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+  }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    top:15px;
+}
+.logo span{
+    color: var(--color-first);
+}
+.dl{
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 26px;
+    font-weight: 400;
+    
+    
+}
+.dli{
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 26px;
+    font-weight: 400;
+    
+}
+.activate hr{
+    
+    height: 1px;
+    background: #ccc;
+    margin: 24px 0;
+
+}
+.lg{
+    color: var(--color-first);
+    text-decoration: none;
+}
+
+.lg:hover {
+    color: #32926F;
+    
+  }

@@ -1,0 +1,444 @@
+@import "https://unpkg.com/open-props";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); 
+:root {
+    --transition: 250ms ease-in-out;
+    --brand: var(--blue-8);
+  }
+
+.details{
+    line-height: var(--font-lineheight-0);
+    display: flex;
+    justify-content: center;
+    margin: 86px;
+    font-family: var(--font-sans);
+    font-weight: 700;
+}
+.PostDetailPage{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #E9E7DA;
+  
+    font-family: var(--font-sans);
+    font-size: var(--font-size-3);
+    line-height: var(--font-lineheight-3);
+  }
+.detailsCard {
+    margin-top: 20px;
+    min-height: 1200px;
+    max-width: 1182px;
+    max-height: 4000px;
+    margin-bottom: 20px;
+    background-color: #3C3C3C;
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-2);
+  
+    transition: var(--transition);
+    transition-property: box-shadow;
+    overflow: hidden;
+    
+}
+
+
+
+.detailsCard:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+}
+.addcard{
+    width: 1182px;
+    height: 220px;
+    margin-bottom: 20px;
+    background-color: #CDCDCD;
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-2);
+  
+    transition: var(--transition);
+    transition-property: box-shadow;
+    overflow: hidden;
+}
+.addcard:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+}
+.cp{
+    width: 1182px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: #CDCDCD;
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-2);
+  
+    transition: var(--transition);
+    transition-property: box-shadow;
+    overflow: hidden;
+}
+.cp:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+}
+.icard{
+    
+    width: 700px;
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: #CDCDCD;
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-2);
+  
+    transition: var(--transition);
+    transition-property: box-shadow;
+    overflow: hidden;
+}
+.icard:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+}
+.Comment{
+    width: 1182px;
+    min-height: 120px;
+    margin-bottom: 30px;
+    background-color: #CDCDCD;
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-1);
+  
+    transition: var(--transition);
+    transition-property: box-shadow;
+    overflow: hidden;
+}
+.Comment:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+}
+.cmnttxt{
+    margin-left:100px;
+    margin-top:20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+.authortxt{
+    margin-left:100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size:20px;
+    
+   
+}
+.ci{
+    max-width: 100%;
+   display: block;
+}
+.titl{
+    color: whitesmoke;
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 36px;
+}
+.txti{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right:100px;
+    color: whitesmoke;
+    font-weight: 600;
+    text-align: justify;
+    text-justify: auto;
+}
+.grid-c {
+    display: grid;
+    grid-template-columns: auto auto ;
+    /*background-color: #2196F3;*/
+    padding: 10px;
+}
+.grid-items1{
+    margin-top: 100px;
+    width: 540px;
+}
+.grid-items2{
+    margin-top: 100px;
+    width: 617px;
+}
+.cardImg{
+   max-width: 100%;
+   display: block;
+}
+.addcard .form-control{
+    width: 797px;
+    margin-left:100px;
+}
+.cmntimg .form-control{
+    width: 797px;
+    margin-left:100px;
+}
+#hlw{
+    width: 797px;
+    margin-left:100px;
+}
+.addcard .form-label{
+    margin-left:100px;
+    margin-top:30px;
+    font-family: var(--font-sans);
+    color: black;
+    font-weight: 700;
+}
+.cmntimg .form-label{
+    margin-left:100px;
+    margin-top:30px;
+    font-family: var(--font-sans);
+    color: black;
+    font-weight: 700;
+}
+.writeComment{
+    margin-left:100px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-family: var(--font-sans);
+    color: black;
+    font-weight: 700;
+}
+.cmnt{
+    margin-left:100px;
+    
+}
+
+.more{
+    
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-family: var(--font-sans);
+    color: black;
+    font-weight: 700; 
+}
+.bi{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    margin-top:35px;
+    margin-left: 100px;
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+  
+.bi:hover {
+    transform: scale(1.2);
+    background-color: #1A0315;
+    border: 2px solid #1A0315;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+.t{
+    min-height: 300px;
+}
+.idn{
+    margin: 50px 0px 50px 100px;
+    font-family: var(--font-sans);
+    color: whitesmoke;
+    font-weight: 600;
+}
+.pro{
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: lighter;
+}
+.com{
+    margin-left:100px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-family: var(--font-sans);
+    color: black;
+    font-weight: 700;
+}
+.like{
+    margin:30px 0;
+    width:100px;
+    height: 40px;
+    border: 1px solid;
+    background: #535353;
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    border-color: #1A0315;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      
+}
+
+  .like:hover {
+    border-color: #1A0315;
+    transition: .5s;
+    background: #1A0315;
+  }
+
+  .b{
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .editPost{
+    margin:30px 0;
+    width:120px;
+    height: 40px;
+    border: 1px solid;
+    background: #535353;
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    border-color: #1A0315;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .editPost:hover{
+    border-color: #1A0315;
+    transition: .5s;
+    background: #1A0315;
+  }
+  .deletePost{
+    margin:30px 0;
+    width:150px;
+    height: 40px;
+    border: 1px solid;
+    background: #535353;
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    border-color: #1A0315;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 0; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .deletePost:hover{
+    border-color: #1A0315;
+    transition: .5s;
+    background: #1A0315;
+  }
+  .cmntbton{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    margin-top:45px;
+    margin-left: 100px;
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.cmntbton:hover{
+    transform: scale(1.2);
+    background-color: #1A0315;
+    border: 2px solid #1A0315;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+  /*.cmntbton{
+      margin-top:45px;
+      margin-left: 100px;
+      
+    background-color: #555555;
+    color: white;
+    border: 2px solid #1A0315;
+    border-radius: 5px;
+  
+  padding: 9px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+.cmntbton:hover {
+    background-color: #1A0315;
+    color: white;
+  }*/
+  .imagi{
+    max-width: 100%;
+    display: block;
+    
+ }
+ .cmntimgiiicard{
+    width: 700px;
+    height: 500px;
+    background-color: #CDCDCD;
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-2);
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    transition-property: box-shadow;
+    overflow: hidden;
+}
+.cmntimgiiicard:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+}
+.cbton{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   margin-right: 100px;
+   margin-left: 100px;
+ }
+ .editcmnt{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.editcmnt:hover{
+    transform: scale(1.2);
+    background-color: #1A0315;
+    border: 2px solid #1A0315;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.deletecmnt{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.deletecmnt:hover{
+    transform: scale(1.2);
+    background-color: #1A0315;
+    border: 2px solid #1A0315;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}

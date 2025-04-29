@@ -1,0 +1,68 @@
+.reportBody{
+    display: grid;
+   place-items: center;
+   min-height: 100vh;
+   background-color: var(--blue-0);
+
+  font-family: var(--font-sans);
+  font-size: var(--font-size-3);
+  line-height: var(--font-lineheight-3);
+}
+.reportCard{
+    height: 350px;
+    /*width: min(100% - 2rem, 40rem);*/
+    width: 700px;
+   
+   background-color: var(--gray-0);
+   box-shadow: var(--shadow-2);
+   border-radius: var(--radius-2);
+
+  transition: var(--transition);
+  transition-property: box-shadow;
+  overflow: hidden;
+}
+.reportCard:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+  }
+.report{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.pr{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 600;
+}
+#rprt{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 600px;
+}
+.rprtbton{
+    
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: #196cbb;
+    color: white;
+    border: 2px solid #196cbb;
+    border-radius: 5px;
+    padding: 3px 12px 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 522px
+}
+.rprtbton:hover {
+    background-color: #0828d8;
+    color: white;
+  }

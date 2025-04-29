@@ -1,0 +1,232 @@
+@import "https://unpkg.com/open-props";
+:root {
+    --transition: 250ms ease-in-out;
+    --brand: var(--blue-8);
+  }
+.newpostPage{
+    display: grid;
+  place-items: center;
+  min-height: 70vh;
+  background-color: var(--blue-0);
+
+  font-family: var(--font-sans);
+  font-size: var(--font-size-3);
+  line-height: var(--font-lineheight-3);
+}
+.newpost{
+    
+    min-height: 477px;
+    /*width: min(100% - 2rem, 40rem);*/
+    width: 700px;
+   
+   background-color: var(--gray-0);
+   box-shadow: var(--shadow-2);
+   border-radius: var(--radius-2);
+
+  transition: var(--transition);
+  transition-property: box-shadow;
+  overflow: hidden;
+}
+.newpost:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+  }
+.heading{
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    color: black;
+    padding-top: 30px;
+    font-weight: 400;
+    
+
+}
+.newposti{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.newposti #exampleFormControlInput1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.newposti #exampleFormControlTextarea1{
+    margin-bottom: 20px;
+}
+/*.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline:none;
+}
+/*.input-box-text{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline:none;
+    height: 100px;
+}
+/*form .postTitle_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+form .posttext_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.postTitle_field input{
+    width:100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+.posttext_field input{
+    width:100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    outline: none;
+    
+}
+.postTitle_field label{
+    position: absolute;
+    top:50%;
+    left:5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: .5s;
+}
+.posttext_field label{
+    position: absolute;
+    top:50%;
+    left:5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: .5s;
+}
+.postTitle_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #2691d9;
+    transition: .5s;
+    
+}
+.postTitle_field input:focus ~ label,
+.postTitle_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.postTitle_field input:focus ~ span::before,
+.postTitle_field input:valid ~ span::before{
+    width: 100%;
+}
+.posttext_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #2691d9;
+    transition: .5s;
+    
+}
+.posttext_field input:focus ~ label,
+.posttext_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.posttext_field input:focus ~ span::before,
+.posttext_field input:valid ~ span::before{
+    width: 100%;
+}*/
+.postimage_field{
+    padding: 10px;
+    margin-left: 40px;
+    /*margin: -5px 0 20px 5px;*/
+    color: black;
+    cursor: pointer;
+}
+.postCategory_field{
+    padding: 10px;
+    margin-left: 40px;
+    color: black;
+    cursor: pointer;
+    
+}
+.image_label{
+    margin-right: 10px;
+}
+.category_label{
+    margin-right: 10px;
+}
+/*.postButton {
+    margin:30px 0;
+    width:100px;
+    height: 40px;
+    background-color: var(--gray-8);
+    color: white;
+   
+    
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 0;
+    position: relative;
+    left: 533px;
+    bottom: 21px;
+    
+  }
+  .postButton:hover{
+    background-color: var(--brand);
+    color: white;
+    transition: .5s;
+    
+}*/
+.postButton{
+    margin:30px 0;
+    width:90px;
+    height: 40px;
+    background-color: var(--brand);
+    color: white;
+    border: 2px solid var(--brand);
+    border-radius: 5px;
+    padding: 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 533px;
+    bottom: 21px;
+}
+.postButton:hover {
+  background-color: #0828d8;
+  color: white;
+}

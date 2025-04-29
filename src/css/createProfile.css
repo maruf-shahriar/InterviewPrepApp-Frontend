@@ -1,0 +1,106 @@
+@import "https://unpkg.com/open-props";
+:root {
+    --transition: 250ms ease-in-out;
+    --brand: var(--blue-8);
+  }
+  .createBody{
+    display: grid;
+   place-items: center;
+   min-height: 100vh;
+   background-color: var(--blue-0);
+
+  font-family: var(--font-sans);
+  font-size: var(--font-size-3);
+  line-height: var(--font-lineheight-3);
+}
+.CreateProfile{
+    
+    height: 630px;
+    /*width: min(100% - 2rem, 40rem);*/
+    width: 700px;
+   margin-bottom: 20px;
+   background-color: var(--gray-0);
+   box-shadow: var(--shadow-2);
+   border-radius: var(--radius-2);
+
+  transition: var(--transition);
+  transition-property: box-shadow;
+  overflow: hidden;
+}
+.CreateProfile:is(:hover, :focus-within) {
+    box-shadow: var(--shadow-3);
+  }
+.create{
+    font-size: 2.9rem;
+    font-family: var(--font-sans);
+  
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    color: black;
+    padding-top: 30px;
+    font-weight: 600;
+    
+
+}
+.createForm{
+    
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.createForm .form-control{
+    margin-top: 20px;
+}
+.createFrm{
+    
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.profil{
+    margin-top: 20px; 
+}
+.covr{
+    margin-top: 20px;  
+}
+.createFrm .form-label{
+    font-size: 17px;
+    font-weight: 500;
+}
+.lbl{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+    
+}
+.gndr{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #196cbb;
+    color: white;
+    border: 2px solid #0828d8;
+    border-radius: 5px;
+    padding: 4px 12px;
+}
+
+.createbtn{
+    margin: 20px 40px 20px 40px;
+    font-weight: 600;
+    background-color: #196cbb;
+    color: white;
+    border: 2px solid #196cbb;
+    border-radius: 5px;
+    padding: 9px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+.createbtn:hover {
+  background-color: #0828d8;
+  color: white;
+}
